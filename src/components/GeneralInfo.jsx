@@ -18,8 +18,6 @@ const GeneralInfo = (props) => {
                 <img src={LinkedinIcon} alt='linkedin icon'></img>
                 <span>LinkedIn</span>
             </a>
-
-            
         </div>
     </div>
     );
