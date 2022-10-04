@@ -1,9 +1,10 @@
 import React from 'react';
+import GeneralInfo from './components/GeneralInfo';
 
 function App() {
   return (
     <div>
-      <p>hello world</p>
+      <GeneralInfo />
     </div>
   );
 }
