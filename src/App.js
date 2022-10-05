@@ -4,6 +4,7 @@ import CreateCardForm from './components/CreateCardForm/CreateCardForm';
 import Footer from './components/Footer';
 import About from './components/About';
 import Interests from './components/Interests';
+import './App.css';
 function App() {
   const [name, setName] = useState('Laura Smith');
   const [web, setWeb] = useState('laurasmith.website');
@@ -26,7 +27,7 @@ function App() {
     setInterests(newInterests);
   }
   return (
-    <div>
+    <div className='wrapper'>
       <GeneralInfo name={name} web={web} email={email}/>
       <About about={about} />
       <Interests interests={interests} />

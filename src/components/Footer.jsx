@@ -7,11 +7,11 @@ import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = (props) => {
     return (
-    <div>
-        <FontAwesomeIcon icon={faSquareTwitter} />
-        <FontAwesomeIcon icon={faSquareFacebook} />
-        <FontAwesomeIcon icon={faSquareInstagram} />
-        <FontAwesomeIcon icon={faSquareGithub} />
+    <div className='flex footer'>
+        <FontAwesomeIcon icon={faSquareTwitter} className='footer-icon footer-flex-item1 fa-2x'/>
+        <FontAwesomeIcon icon={faSquareFacebook} className='footer-icon fa-2x'/>
+        <FontAwesomeIcon icon={faSquareInstagram} className='footer-icon fa-2x'/>
+        <FontAwesomeIcon icon={faSquareGithub} className='footer-icon footer-flex-item4 fa-2x'/>
     </div>);
 }
  
