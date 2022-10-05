@@ -1,16 +1,14 @@
-import React from 'react';
-import ProfilePicture from '../profile pictures/profile_picture.png';
-import EmailIcon from '../icons/EmailIcon.svg';
-import LinkedinIcon from '../icons/LinkedinIcon.svg';
+import ProfilePicture from '../components/profile pictures/profile_picture.png';
+import EmailIcon from '../components/icons/EmailIcon.svg';
+import LinkedinIcon from '../components/icons/LinkedinIcon.svg';
 const GeneralInfo = (props) => {
     return (
     <div>
         <img src={ProfilePicture} alt='headshot'></img>
-        <h1> Laura Smith</h1>
-        <a href='#'>laurasmith.website</a>
-
+        <h1>{props.name}</h1>
+        <a href='#'>{props.web}</a>
         <div>
-            <a href='#'>
+            <a href={props.email}>
                 <img src={EmailIcon} alt='email icon'></img>
                 <span>Email</span>
             </a>
