@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+
 }
 
 /* typograph */
@@ -35,10 +36,19 @@ a {
     color: #fff;
 }
 /* general layout */
-.wrapper {
+.cards-wrapper {
+    justify-content: space-around;
+}
+.card1 {
     width: 317px;
     background-color:#1A1B21;
-    ;
+}
+.inactive-card {
+    display: none;
+}
+.card2 {
+    width: 317px;
+    background-color:#1A1B21;
 }
 .flex {
     display: flex;
@@ -69,13 +79,7 @@ a {
 .email-link h3{
     color: #374151;    
 }
-/* .email-link:hover{
-    background-color: #5093E2;
-}
-.email-link h3:hover {
-    background-color: #5093E2;
-    color: white;
-} */
+
 .linkedin-link {
     background-color:#5093E2;
 }
@@ -83,6 +87,14 @@ a {
     justify-content: space-around;
 }
 
+/* about & interest component */
+.about-interests {
+    padding: 1em 1.5em;
+    line-height: 1em;
+}
+.about-interests h2 {
+    margin: 0.5em 0;
+}
 
 /* footer */
 .footer {
@@ -101,4 +113,30 @@ a {
 }
 .footer-flex-item4 {
     margin-right: 10px;
+}
+
+/* CreateCardForm component */
+form {
+    margin: auto;
+    width: 100%;
+    background-color: #161619;
+    color: #fff;
+}
+.fill-form-paragraph {
+    padding: 0 1.5em;
+    margin: 1em 0;
+}
+.fill-form-paragraph p {
+    color:#F47D27;
+}
+
+.form-item label {
+    display: block;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.form-item input {
+    display: block;
+    margin-left: 30px;
+    margin-top: 5px;
 }
